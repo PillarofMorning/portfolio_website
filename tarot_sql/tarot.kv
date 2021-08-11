@@ -1,0 +1,50 @@
+MDScreen:
+    MDSwiper:
+        size_hint_y: None
+        height: root.height - dp(40)
+        y: root.height - self.height - dp(20)        
+        MDSwiperItem:
+            MDCard:
+                orientation:'vertical'
+                Image:
+                    source: "reading.jpg"
+                    size_hint_y:.8
+                    keep_ratio: True
+                MDLabel:
+                    text: "Image 1"
+                    font_size: 25
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    
+        MDSwiperItem:
+            MDCard:
+                orientation:'vertical'
+                Image:
+                    source: "FOL.png"
+                    size_hint_y:.8
+                    allow_stretch: True
+                    keep_ratio: False               
+                MDLabel:
+                    text: "Image 2"
+                    font_size: 25
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+        MDSwiperItem:
+            MDCard:
+                orientation:'vertical'
+                Image:
+                    source: "img.png"
+                    size_hint_y:.8
+                    allow_stretch: True
+                    keep_ratio: False                
+                MDLabel:
+                    text: "Image 3"
+                    font_size: 25
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"

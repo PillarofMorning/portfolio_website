@@ -1,8 +1,13 @@
-from tkinter import *
+from kivy.lang import Builder
+from kivymd.app import MDApp
 
-root = Tk()
 
-# Creating a label widget
-myLabel = Label(root, text="Hello World")
-# Shoving it onto the screen
-myLabel.pack()
+class MainApp(MDApp):
+
+    def build(self):
+        self.theme_cls.theme_style = "Dark"
+        self.theme_cls.primary_palette = "BlueGray"
+        return Builder.load_file('tarot.kv')
+
+MainApp().run()
+
